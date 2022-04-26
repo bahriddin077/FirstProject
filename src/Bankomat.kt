@@ -1,2 +1,3 @@
 class bank {
+    fun salom{}
 }
