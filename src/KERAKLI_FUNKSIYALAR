@@ -1,0 +1,39 @@
+             KERAKLI  FUNKSIYALAR
+
+1 -> ADD QILISH UCHUN FUNKSIYA
+
+    println("name: ")             // Add qilishni 1-yo'li
+    var ism = scanner.next()
+    println("Fakulteti: ")
+    var fak = scanner.next()
+    println("kursi: ")
+    var kurs = scanner.next()
+    var student = Student(ism,fak,kurs)
+    userList.add(student)
+
+    var talaba = Student()          // Add qilish 2- yo'li
+    println("Student name: ")
+    talaba.ism = scanner.next()
+    println("Fakulteti")
+    talaba.fak = scanner.next()
+    println("Kursi")
+    talaba.kurs = scanner.next()
+    userList.add(talaba)
+_______________________________________________________________________
+2 -> LISTNI BARCHASINI KORSATISH UCHUN
+
+    for (i in userList) {
+                println(i)
+            }
+______________________________________________________________
+3 -> LISTDAN O'CHIRIB TASHLASH
+
+             println("Delete Student name")
+                    val name = readLine()
+                    userList.removeIf { s -> s.ism.equals(name) }
+                    println("Student haydaldi")
+____________________________________________________________________
+
+    var kes = map.filterValues { it == "ism" }.keys
+    // VALUES ORQALI KEYDI CHIQARISH
+    // VALUESINI YOZAMIZ KEY CHIQADI
