@@ -1,2 +1,2 @@
-class Bankomat {
+class bank {
 }
